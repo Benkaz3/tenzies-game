@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 function Die(props) {
 
   const styles = {
-    backgroundColor: props.isHeld ? "#59E391" : "#eee",
+    border: props.isHeld ? "5px solid grey" : "none",
   };
   const dieRef = useRef(null);
 
