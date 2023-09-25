@@ -57,8 +57,7 @@ function App() {
             return die.isHeld ? die : generateNewDie();
           })
         );
-        const rollNumber = rolls + 1;
-        setRolls(rollNumber);
+        setRolls(prevRolls => prevRolls + 1);
   
         // After rolling is complete toggle off the rolling effect
         setTimeout(() => {
